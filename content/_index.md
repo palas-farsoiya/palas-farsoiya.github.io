@@ -11,7 +11,8 @@ sections:
         Farsoiya
         Research Group
       image:
-        filename: welcome.jpg
+        filename: Farsoiya_et_al_2024.png
+        width: 200
       text: |
         <br>
         
