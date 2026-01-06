@@ -72,7 +72,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Researchers
+  - Principal Investigators
 ---
 
 Palas Kumar Farsoiya is an Assistant Professor at IIT Roorkee, where he leads research on multiphase flow physics at fluid interfaces. His work combines direct numerical simulations, theoretical modeling, and tabletop experiments to study wave–particle interactions, surfactant-modulated dynamics, and bio-inspired flow structures.
