@@ -1,11 +1,11 @@
 ---
-title: Jian Yang and Monica Hall Win the Best Paper Award at Wowchemy 2020
-date: 2020-12-02
+title: Abhinandan Mohanty joins the group.
+date: 2026-01-15
 image:
   focal_point: 'top'
 ---
 
-Welcome to Abhinandan Mohanty for joining Farsoiya Research Group.
+Abhinandan Mohanty joins Farsoiya Research Group as PhD candidate. Welcome Abhinandan.
 
 <!--more-->
 
