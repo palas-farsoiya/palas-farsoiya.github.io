@@ -11,13 +11,13 @@ const People = () => {
     image: "/palas-avatar.jpg"
   };
   
-  const labStaff = {
-    name: "Kanchna Bhatrola ",
-    role: "Technical Staff",
-    affiliation: "Department of Chemical Engineering, IIT Roorkee",
-    bio: "Support research activities in the lab.",
-    image: "/people/kanchan.jpeg"
-  };
+  // const labStaff = {
+  //   name: "Kanchna Bhatrola ",
+  //   role: "Technical Staff",
+  //   affiliation: "Department of Chemical Engineering, IIT Roorkee",
+  //   bio: "Support research activities in the lab.",
+  //   image: "/people/kanchan.jpeg"
+  // };
 
   const labMembers = [
     {
