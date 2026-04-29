@@ -30,8 +30,7 @@ const People = () => {
       name: "Abhay Purushottam Khandale",
       role: "MTech Student",
       affiliation: "IIT Roorkee",
-      focus: "Viscous droplet breakup"
-      image: "/people/abhay.jpg"
+      focus: "Viscous droplet breakup."
     },
     {
       name: "Aman Deogam",
@@ -44,9 +43,7 @@ const People = () => {
       name: "Loveraj Singh",
       role: "MTech Student",
       affiliation: "IIT Roorkee",
-      focus: "Numerical modeling of methane pyrolysis.",
-      image: "/people/loveraj.jpg"
-
+      focus: "Numerical modeling of methane pyrolysis."
     },
     {
       name: "Udit Maurya",
