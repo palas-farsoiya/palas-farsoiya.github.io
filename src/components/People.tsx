@@ -10,6 +10,14 @@ const People = () => {
     bio: "Leads Farsoiya Lab with interests in multiphase flows, interfacial dynamics, DNS, surfactant-laden interfaces, pilot-wave dynamics, and bio-inspired flow control.",
     image: "/palas-avatar.jpg"
   };
+  
+  const labStaff = {
+    name: "Kanchna Bhatrola ",
+    role: "Technical Staff",
+    affiliation: "Department of Chemical Engineering, IIT Roorkee",
+    bio: "Support research activities in the lab.",
+    image: "/people/kanchan.jpeg"
+  };
 
   const labMembers = [
     {
