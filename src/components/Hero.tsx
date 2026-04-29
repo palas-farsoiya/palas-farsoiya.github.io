@@ -33,7 +33,7 @@ const Hero = () => {
               </p>
 
               <p>
-                My research combines direct numerical simulations, theoretical modeling, and experiments to study multiphase flows, surfactant-laden interfaces, pilot-wave dynamics, and bio-inspired flow control. We use modern numerical tools to uncover emergent physics and build insight for environmental and industrial fluid systems.
+                My research combines direct numerical simulations, theoretical modeling, and experiments to study multiphase flows, surfactant-laden interfaces, and bio-inspired flow control. We use modern numerical tools to uncover emergent physics and build insight for environmental and industrial fluid systems.
               </p>
 
               <p>

@@ -30,20 +30,23 @@ const People = () => {
       name: "Abhay Purushottam Khandale",
       role: "MTech Student",
       affiliation: "IIT Roorkee",
-      focus: "CFD, hydrogen energy, and AI/ML applications in chemical and energy systems."
+      focus: "Viscous droplet breakup"
+      image: "/people/abhay.jpg"
     },
     {
       name: "Aman Deogam",
       role: "MTech Student",
       affiliation: "IIT Roorkee",
-      focus: "Graduate research in computational fluid mechanics.",
+      focus: "Numerical modeling of methane pyrolysis.",
       image: "/people/aman.jpg"
     },
     {
       name: "Loveraj Singh",
       role: "MTech Student",
       affiliation: "IIT Roorkee",
-      focus: "Graduate research in chemical engineering and fluid systems."
+      focus: "Numerical modeling of methane pyrolysis.",
+      image: "/people/loveraj.jpg"
+
     },
     {
       name: "Udit Maurya",
