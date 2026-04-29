@@ -5,7 +5,7 @@ const ProfileSidebar = () => {
     { name: 'Email', href: 'mailto:palas.farsoiya@ch.iitr.ac.in', icon: Mail },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/palas-kumar-farsoiya/', icon: Linkedin },
     { name: 'Google Scholar', href: 'https://scholar.google.com/citations?user=GlKaKdIAAAAJ&hl=en', icon: ExternalLink },
-    { name: 'Calendly', href: 'https://calendly.com/farsoiya', icon: FileText },
+    { name: 'Appointment', href: 'https://calendly.com/farsoiya', icon: FileText },
   ];
 
   return (

@@ -2,10 +2,12 @@ import { ExternalLink, FileText, Linkedin } from 'lucide-react';
 
 const Hero = () => {
   const phdAdmissionsUrl = "https://iitr.ac.in/Academics/Admission%20To%20Doctoral%20Programmes.html";
+  const appointmentUrl = "https://calendly.com/farsoiya";
 
   const quickLinks = [
     { name: 'Google Scholar', href: 'https://scholar.google.com/citations?user=GlKaKdIAAAAJ&hl=en', icon: ExternalLink },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/palas-kumar-farsoiya/', icon: Linkedin },
+    { name: 'Appointment', href: appointmentUrl, icon: FileText },
     { name: 'Contact', href: 'mailto:palas.farsoiya@ch.iitr.ac.in', icon: FileText },
   ];
 
