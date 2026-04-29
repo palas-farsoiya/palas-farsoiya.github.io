@@ -30,7 +30,9 @@ const People = () => {
       name: "Abhay Purushottam Khandale",
       role: "MTech Student",
       affiliation: "IIT Roorkee",
-      focus: "Viscous droplet breakup."
+      focus: "Viscous droplet breakup.",
+      image: "/people/abhay.jpeg"
+
     },
     {
       name: "Aman Deogam",

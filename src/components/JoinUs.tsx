@@ -129,46 +129,21 @@ const JoinUs = () => {
               </h3>
               <div className="grid gap-4 md:grid-cols-2">
                 <a
-                  href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships"
+                  href="https://anrfonline.in/ANRF/npdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-card border border-border rounded-lg p-6 hover:border-accent transition-colors"
                 >
                   <h4 className="text-lg font-semibold text-primary mb-2">
-                    Marie Skłodowska-Curie Actions (MSCA) Postdoctoral Fellowships
+                    ANRF-NPDF
                   </h4>
                   <p className="text-sm text-muted-foreground">
-                    European postdoctoral fellowship scheme supporting international mobility.
+                    ANRF sponsorded postdoctoral fellowship information for eligible applicants.
                   </p>
                 </a>
 
-                <a
-                  href="https://www.leverhulme.ac.uk/early-career-fellowships"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-card border border-border rounded-lg p-6 hover:border-accent transition-colors"
-                >
-                  <h4 className="text-lg font-semibold text-primary mb-2">
-                    Leverhulme Trust Early Career Fellowships
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    Fellowship scheme for outstanding early-career researchers.
-                  </p>
-                </a>
-
-                <a
-                  href="https://royalsociety.org/grants/newton-international-fellowships/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-card border border-border rounded-lg p-6 hover:border-accent transition-colors"
-                >
-                  <h4 className="text-lg font-semibold text-primary mb-2">
-                    Royal Society Newton International Fellowship
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    International fellowship supporting global postdoctoral researchers.
-                  </p>
-                </a>
+             
+               
               </div>
             </div>
 

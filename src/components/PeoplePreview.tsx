@@ -21,7 +21,7 @@ const featuredTeam = [
     role: "MTech Student",
     affiliation: "IIT Roorkee",
     collaboration: "CFD and hydrogen energy",
-    image: "/people/abhinandan.jpg"
+    image: "/people/abhay.jpeg"
   },
   {
     name: "Ilies Haouche",
