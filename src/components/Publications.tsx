@@ -136,7 +136,7 @@ const Publications = () => {
                 Research
               </h2>
               <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-                Publications associated with the Cambridge Core author record, each paired with a plain-language summary and the Cambridge graphical abstract where available.
+                Recent publications with graphical abstracts and summaries.
               </p>
             </div>
 
