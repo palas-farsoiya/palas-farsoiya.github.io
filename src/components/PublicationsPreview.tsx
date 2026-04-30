@@ -11,7 +11,7 @@ const featuredPublications = [
     
   // },
   {
-    title: " hybrid Volume of Fluid Phase-Field method for Direct Numerical Simulations of soluble surfactant-laden interfacial flows",
+    title: "A hybrid Volume of Fluid Phase-Field method for Direct Numerical Simulations of soluble surfactant-laden interfacial flows",
     journal: "Preprint on HAL",
     year: "2026",
     highlight: "How surfactants adsorb, desorb, and diffuse at interfaces",

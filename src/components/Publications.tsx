@@ -1,18 +1,18 @@
 import ProfileSidebar from './ProfileSidebar';
 
 const cambridgePublications = [
-  // {
-  //   year: "2026",
-  //   title: "A hybrid Volume of Fluid Phase-Field method for Direct Numerical Simulations of soluble surfactant-laden interfacial flows",
-  //   authors: "Haouche, Ilies and Reichert, Benjamin and Baudoin, Michaël and Kumar Farsoiya, Palas",
-  //   journal: "Preprint",
-  //   volume: "",
-  //   doi: "https://hal.science/hal-05602246",
-  //   link: "https://hal.science/hal-05602246v1/file/haouche%20et%20al.pdf",
-  //   image: "/publications/soluble-surfactant.png",
-  //   summary:
-  //     "This paper provides a open-source novel numerical approach to simulate flows with soluble surfactants at interfaces."
-  // },
+  {
+    year: "2026",
+    title: "A hybrid Volume of Fluid Phase-Field method for Direct Numerical Simulations of soluble surfactant-laden interfacial flows",
+    authors: "Haouche, Ilies and Reichert, Benjamin and Baudoin, Michaël and Kumar Farsoiya, Palas",
+    journal: "Preprint",
+    volume: "",
+    doi: "https://hal.science/hal-05602246",
+    link: "https://hal.science/hal-05602246v1/file/haouche%20et%20al.pdf",
+    image: "/publications/soluble-surfactant.png",
+    summary:
+      "This paper provides a open-source novel numerical approach to simulate flows with soluble surfactants at interfaces."
+  },
   {
     year: "2026",
     title: "Surfactant effects on gravity-capillary waves",
