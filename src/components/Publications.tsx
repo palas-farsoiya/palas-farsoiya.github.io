@@ -105,6 +105,7 @@ const cambridgePublications = [
     volume: "857, 80-118",
     doi: "10.1017/jfm.2018.657",
     link: "https://doi.org/10.1017/jfm.2018.657",
+     image: "/publications/patankar-faraday.png",
     summary:
       "This work shows how periodic forcing can excite waves on a cylindrical fluid filament and even delay certain instabilities. For a general reader, the message is that shaking a fluid system in the right way can either organize its motion or destabilize it into sheets, fragments, and breakup."
   },
@@ -116,6 +117,7 @@ const cambridgePublications = [
     volume: "826, 797-818",
     doi: "10.1017/jfm.2017.443",
     link: "https://doi.org/10.1017/jfm.2017.443",
+    image: "/publications/surfactant-axisymmetric.png",
     summary:
       "This paper examines how the interface between two viscous fluids oscillates and sometimes produces a central jet or a daughter droplet. In public-facing terms, it helps explain how fluid surfaces bounce, sharpen, and sometimes pinch off when gravity and surface tension compete."
   }
