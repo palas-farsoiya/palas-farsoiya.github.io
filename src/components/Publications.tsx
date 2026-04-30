@@ -117,7 +117,7 @@ const cambridgePublications = [
     volume: "826, 797-818",
     doi: "10.1017/jfm.2017.443",
     link: "https://doi.org/10.1017/jfm.2017.443",
-    image: "/publications/surfactant-axisymmetric.png",
+    image: "/publications/axisymmetric.png",
     summary:
       "This paper examines how the interface between two viscous fluids oscillates and sometimes produces a central jet or a daughter droplet. In public-facing terms, it helps explain how fluid surfaces bounce, sharpen, and sometimes pinch off when gravity and surface tension compete."
   }
