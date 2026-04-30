@@ -2,6 +2,14 @@ import { ArrowRight, ExternalLink, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const featuredPublications = [
+    {
+    year: "2026",
+    title: "A hybrid Volume of Fluid Phase-Field method for Direct Numerical Simulations of soluble surfactant-laden interfacial flows",
+    highlight: "How surfactants adsorb, desorb, and diffuse at interfaces",
+    link: "https://hal.science/hal-05602246v1/file/haouche%20et%20al.pdf",
+    image: "/publications/soluble-surfactant.png",
+    
+  },
   {
     title: "Surfactant effects on gravity-capillary waves",
     journal: "Journal of Fluid Mechanics",
