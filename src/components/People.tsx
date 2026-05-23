@@ -35,6 +35,13 @@ const People = () => {
       image: "/people/deependra.jpg"
     },
     {
+      name: "Minakshi Uniyal",
+      role: "PhD Student",
+      affiliation: "IIT Roorkee",
+      focus: "Faraday waves and emergent hydrodynamics.",
+      image: "/people/minakshi.jpeg"
+    },
+    {
       name: "Abhay Purushottam Khandale",
       role: "MTech Student",
       affiliation: "IIT Roorkee",
@@ -42,26 +49,26 @@ const People = () => {
       image: "/people/abhay.jpeg"
 
     },
-    {
-      name: "Aman Deogam",
-      role: "MTech Student",
-      affiliation: "IIT Roorkee",
-      focus: "Numerical modeling of methane pyrolysis.",
-      image: "/people/aman.jpg"
-    },
+    // {
+    //   name: "Aman Deogam",
+    //   role: "MTech Student",
+    //   affiliation: "IIT Roorkee",
+    //   focus: "Numerical modeling of methane pyrolysis.",
+    //   image: "/people/aman.jpg"
+    // },
     {
       name: "Loveraj Singh",
       role: "MTech Student",
       affiliation: "IIT Roorkee",
       focus: "Numerical modeling of methane pyrolysis."
-    },
-    {
-      name: "Udit Maurya",
-      role: "MTech Student",
-      affiliation: "IIT Roorkee",
-      focus: "Graduate research in interfacial and multiphase flows.",
-      image: "/people/udit.jpg"
     }
+    // {
+    //   name: "Udit Maurya",
+    //   role: "MTech Student",
+    //   affiliation: "IIT Roorkee",
+    //   focus: "Graduate research in interfacial and multiphase flows.",
+    //   image: "/people/udit.jpg"
+    // }
   ];
 
   const collaborators = [

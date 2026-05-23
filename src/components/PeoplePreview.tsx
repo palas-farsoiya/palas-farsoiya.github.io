@@ -16,6 +16,13 @@ const featuredTeam = [
     collaboration: "Marangoni flows",
     image: "/people/deependra.jpg"
   },
+   {
+    name: "Minakshi Uniyal",
+    role: "PhD Student",
+    affiliation: "IIT Roorkee",
+    collaboration: "Faraday waves",
+    image: "/people/minakshi.jpeg"
+  },
   {
     name: "Abhay Purushottam Khandale",
     role: "MTech Student",
