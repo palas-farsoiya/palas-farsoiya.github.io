@@ -93,7 +93,7 @@ const Hero = () => {
           </p>
 
           <p className="mt-1 text-base text-foreground">
-            We welcome motivated students and collaborators interested in computational fluid mechanics, interfacial flows, and fluid-structure interaction.
+            We welcome motivated students and collaborators interested in computational fluid mechanics, interfacial flows, and fluid-structure interaction. Please schedule an appointment to discuss research opportunities and research group fit.
           </p>
 
           <a

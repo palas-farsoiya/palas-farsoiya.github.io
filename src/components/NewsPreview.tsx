@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 const NewsPreview = () => {
   const latestNews = [
     {
+      date: "2026-05-04",
+      title: "Minakshi Uniyal joins the Farsoiya Research Group as a PhD candidate.",
+      type: "Group",
+      image: "/people/minakshi.jpeg"
+    },
+    {
       date: "2026-01-15",
       title: "Abhinandan Mohanty joins the Farsoiya Research Group as a PhD candidate.",
       type: "Group",
@@ -36,7 +42,7 @@ const NewsPreview = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto grid gap-6 md:grid-cols-2">
           {latestNews.map((item, index) => (
             <div key={index} className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div className="rounded-lg border border-muted bg-background p-2 mb-4">

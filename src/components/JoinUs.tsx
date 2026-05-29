@@ -19,7 +19,7 @@ const JoinUs = () => {
                 Join Us
               </h2>
               <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                We welcome motivated students and visitors interested in computational fluid mechanics, interfacial flows, multiphase transport, and fluid-structure interaction.
+                We welcome motivated students and visitors interested in computational fluid mechanics, interfacial flows, multiphase transport, and fluid-structure interaction. Please schedule an appointment to discuss research opportunities and research group fit.
               </p>
             </div>
 
