@@ -15,6 +15,7 @@ import NewsPage from "./pages/NewsPage";
 import OutreachPage from "./pages/OutreachPage";
 import ContactPage from "./pages/ContactPage";
 import JoinUsPage from "./pages/JoinUsPage";
+import CoursePage from "./pages/CoursePage";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,14 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/research" element={<ResearchPage />} />
           <Route path="/publications" element={<PublicationsPage />} />
+          <Route
+            path="/courses/computer-programming-and-numerical-analysis"
+            element={<CoursePage />}
+          />
+          <Route
+            path="/courses/computer-programming-and-numerical-analysis/:chapterSlug"
+            element={<CoursePage />}
+          />
           <Route path="/people" element={<PeoplePage />} />
           <Route path="/talks" element={<TalksPage />} />
           <Route path="/awards" element={<AwardsPage />} />
