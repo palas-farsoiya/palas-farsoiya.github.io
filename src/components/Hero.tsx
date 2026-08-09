@@ -39,7 +39,7 @@ const Hero = () => {
               </p>
 
               <p>
-                Before joining IIT Roorkee, I completed my PhD in Chemical Engineering at{' '}
+                Before joining IIT Roorkee, I completed my PhD at{' '}
                 <a
                   href="https://www.iitb.ac.in/"
                   target="_blank"
