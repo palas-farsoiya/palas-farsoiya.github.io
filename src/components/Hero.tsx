@@ -31,11 +31,11 @@ const Hero = () => {
                   className="text-accent hover:underline"
                 >
                   IIT Roorkee
-                </a>, where I lead Farsoiya Lab. Our work explores how fluid interfaces between liquids, gases, and complex fluids govern transport, deformation, and energy exchange across scales.
+                </a>, where I lead Farsoiya Lab. 
               </p>
 
               <p>
-                My research combines direct numerical simulations, theoretical modeling, and experiments to study multiphase flows, surfactant-laden interfaces, and bio-inspired flow control. We use modern numerical tools to uncover emergent physics and build insight for environmental and industrial fluid systems.
+                We study how waves interact with droplets and particles to produce complex motion, transport, and collective behavior. Combining high-fidelity simulations with experiments, my research explores how fluid systems retain memory of past interactions and how that memory shapes their future dynamics. My broader goal is to uncover new physical principles of wave mediated transport and use them to develop controllable and programmable fluid systems.
               </p>
 
               <p>

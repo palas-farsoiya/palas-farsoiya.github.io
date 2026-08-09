@@ -3,6 +3,41 @@ import ProfileSidebar from './ProfileSidebar';
 const News = () => {
   const newsItems = [
     {
+      date: "2026-06",
+      title: "Palas visits Luc Deike at Princeton University, NJ.",
+      type: "Travel",
+      description: "Palas visits Luc Deike at Princeton University in New Jersey for research discussions.",
+      image: "/placeholder.svg"
+    },
+    {
+      date: "2026-06",
+      title: "Palas visits John Bush at MIT, Cambridge, MA.",
+      type: "Travel",
+      description: "Palas visits John Bush at MIT in Cambridge, Massachusetts for research discussions.",
+      image: "/placeholder.svg"
+    },
+    {
+      date: "2026-06",
+      title: "Palas visits Aditya Lele at Rowan University, NJ.",
+      type: "Travel",
+      description: "Palas visits Aditya Lele at Rowan University in New Jersey for research discussions.",
+      image: "/placeholder.svg"
+    },
+    {
+      date: "2026-06",
+      title: "Palas visits Ricardo Amores at UIUC, IL.",
+      type: "Travel",
+      description: "Palas visits Ricardo Amores at the University of Illinois Urbana-Champaign in Illinois for research discussions.",
+      image: "/placeholder.svg"
+    },
+    {
+      date: "2026-06",
+      title: "Palas visits Suhas Jain at Georgia Tech, Atlanta, GA.",
+      type: "Travel",
+      description: "Palas visits Suhas Jain at Georgia Tech in Atlanta, Georgia for research discussions.",
+      image: "/placeholder.svg"
+    },
+    {
       date: "2026-05-04",
       title: "Minakshi Uniyal joins the Farsoiya Research Group as a PhD candidate.",
       type: "Group",

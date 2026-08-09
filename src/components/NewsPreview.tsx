@@ -4,29 +4,41 @@ import { Link } from 'react-router-dom';
 const NewsPreview = () => {
   const latestNews = [
     {
+      date: "2026-06",
+      title: "Palas visits Luc Deike at Princeton University, NJ.",
+      type: "Travel",
+      image: "/placeholder.svg"
+    },
+    {
+      date: "2026-06",
+      title: "Palas visits John Bush at MIT, Cambridge, MA.",
+      type: "Travel",
+      image: "/placeholder.svg"
+    },
+    {
+      date: "2026-06",
+      title: "Palas visits Aditya Lele at Rowan University, NJ.",
+      type: "Travel",
+      image: "/placeholder.svg"
+    },
+    {
+      date: "2026-06",
+      title: "Palas visits Ricardo Amores at UIUC, IL.",
+      type: "Travel",
+      image: "/placeholder.svg"
+    },
+    {
+      date: "2026-06",
+      title: "Palas visits Suhas Jain at Georgia Tech, Atlanta, GA.",
+      type: "Travel",
+      image: "/placeholder.svg"
+    },
+    {
       date: "2026-05-04",
       title: "Minakshi Uniyal joins the Farsoiya Research Group as a PhD candidate.",
       type: "Group",
       image: "/people/minakshi.jpeg"
     },
-    {
-      date: "2026-01-15",
-      title: "Abhinandan Mohanty joins the Farsoiya Research Group as a PhD candidate.",
-      type: "Group",
-      image: "/news/abhinandan.jpg"
-    },
-    {
-      date: "2025-06-25",
-      title: "Palas visits EPFL, Lausanne, Switzerland.",
-      type: "Travel",
-      image: "/news/palas-epfl.jpg"
-    },
-    {
-      date: "2025-06-27",
-      title: "Palas visits ETH Zurich to meet Daniel Ruth.",
-      type: "Travel",
-      image: "/news/palas-eth.jpg"
-    }
   ];
 
   return (
@@ -42,25 +54,25 @@ const NewsPreview = () => {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid gap-6 md:grid-cols-2">
+        <div className="max-w-6xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {latestNews.map((item, index) => (
-            <div key={index} className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow">
-              <div className="rounded-lg border border-muted bg-background p-2 mb-4">
+            <div key={index} className="bg-card border border-border rounded-xl p-4 hover:shadow-lg transition-shadow">
+              <div className="rounded-lg border border-muted bg-background p-2 mb-3">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-auto object-contain rounded-md"
+                  className="w-full h-32 object-contain rounded-md"
                 />
               </div>
-              <div className="flex items-start gap-4">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+              <div className="flex items-start gap-3">
+                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
                   <Calendar className="h-4 w-4" />
                   <span className="font-medium">{item.date}</span>
                   <span>•</span>
                   <span>{item.type}</span>
                 </div>
               </div>
-              <h3 className="text-lg font-semibold text-primary leading-relaxed">
+              <h3 className="text-base font-semibold text-primary leading-snug">
                 {item.title}
               </h3>
             </div>
