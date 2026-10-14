@@ -1,4 +1,5 @@
 import { Link, Navigate, useParams } from "react-router-dom";
+import { usePageMeta } from "@/hooks/use-page-meta";
 import {
   courseBasePath,
   courseChapters,
@@ -251,12 +252,20 @@ const CourseReader = () => {
   const chapterIndex = courseChapters.findIndex(
     (chapter) => chapter.slug === activeSlug,
   );
+  const activeChapter = courseChapters[chapterIndex];
+
+  usePageMeta(
+    activeChapter && activeChapter.slug !== "preface"
+      ? `${activeChapter.title} - ${courseInfo.title}`
+      : courseInfo.title,
+    activeChapter?.summary.trim(),
+  );
 
   if (chapterIndex === -1) {
     return <Navigate to={courseBasePath} replace />;
   }
 
-  const chapter = courseChapters[chapterIndex];
+  const chapter = activeChapter;
   const previousChapter = courseChapters[chapterIndex - 1];
   const nextChapter = courseChapters[chapterIndex + 1];
 

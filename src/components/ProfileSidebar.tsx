@@ -1,11 +1,13 @@
-import { Mail, MapPin, ExternalLink, FileText, Linkedin } from 'lucide-react';
+import { CalendarDays, ExternalLink, Linkedin, Mail, MapPin } from 'lucide-react';
+import { contact, links } from '@/data/site';
 
 const ProfileSidebar = () => {
-  const links = [
-    { name: 'Email', href: 'mailto:palas.farsoiya@ch.iitr.ac.in', icon: Mail },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/palas-kumar-farsoiya/', icon: Linkedin },
-    { name: 'Google Scholar', href: 'https://scholar.google.com/citations?user=GlKaKdIAAAAJ&hl=en', icon: ExternalLink },
-    { name: 'Appointment', href: 'https://calendly.com/farsoiya', icon: FileText },
+  const sidebarLinks = [
+    { name: 'Email', href: `mailto:${contact.email}`, icon: Mail },
+    { name: 'LinkedIn', href: links.linkedin, icon: Linkedin },
+    { name: 'Google Scholar', href: links.googleScholar, icon: ExternalLink },
+    ...(links.orcid ? [{ name: 'ORCID', href: links.orcid, icon: ExternalLink }] : []),
+    { name: 'Appointment', href: links.appointment, icon: CalendarDays },
   ];
 
   return (
@@ -13,8 +15,10 @@ const ProfileSidebar = () => {
       {/* Profile Image */}
       <div className="text-center mb-6">
         <img
-          src="/palas-avatar.jpg"
+          src="/palas-avatar.webp"
           alt="Dr. Palas Kumar Farsoiya"
+          width={128}
+          height={128}
           className="w-32 h-32 rounded-full mx-auto mb-4 border-2 border-muted object-cover"
         />
         <h3 className="text-xl font-semibold text-primary mb-2">Dr Palas Kumar Farsoiya</h3>
@@ -27,14 +31,14 @@ const ProfileSidebar = () => {
 
       {/* Links */}
       <div className="space-y-3">
-        {links.map((link) => {
+        {sidebarLinks.map((link) => {
           const Icon = link.icon;
+          const isExternal = link.href.startsWith('http');
           return (
             <a
               key={link.name}
               href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...(isExternal && { target: '_blank', rel: 'noopener noreferrer' })}
               className="flex items-center gap-3 p-2 text-sm text-foreground hover:bg-muted rounded-md transition-colors"
             >
               <Icon className="h-4 w-4 text-accent flex-shrink-0" />

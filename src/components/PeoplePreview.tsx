@@ -1,43 +1,6 @@
 import { ArrowRight, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
-const featuredTeam = [
-  {
-    name: "Abhinandan Mohanty",
-    role: "PhD Student",
-    affiliation: "IIT Roorkee",
-    collaboration: "Faraday waves",
-    image: "/people/abhinandan.jpg"
-  },
-  {
-    name: "Deependra Singh Chauhan",
-    role: "PhD Student",
-    affiliation: "IIT Roorkee",
-    collaboration: "Marangoni flows",
-    image: "/people/deependra.jpg"
-  },
-   {
-    name: "Minakshi Uniyal",
-    role: "PhD Student",
-    affiliation: "IIT Roorkee",
-    collaboration: "Faraday waves",
-    image: "/people/minakshi.jpeg"
-  },
-  {
-    name: "Abhay Purushottam Khandale",
-    role: "MTech Student",
-    affiliation: "IIT Roorkee",
-    collaboration: "CFD and hydrogen energy",
-    image: "/people/abhay.jpeg"
-  },
-  {
-    name: "Ilies Haouche",
-    role: "Visitor",
-    affiliation: "University of Lille",
-    collaboration: "Surfactant-laden interfacial flows",
-    image: "/people/ilies.jpg"
-  }
-];
+import { featuredPeople } from '@/data/people';
 
 const PeoplePreview = () => {
   return (
@@ -54,18 +17,21 @@ const PeoplePreview = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-10">
-          {featuredTeam.map((person, index) => (
-            <div key={index} className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow flex gap-4 items-center">
+          {featuredPeople.map((person) => (
+            <div key={person.name} className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow flex gap-4 items-center">
               <img
                 src={person.image}
                 alt={person.name}
+                width={80}
+                height={80}
+                loading="lazy"
                 className="w-20 h-20 object-cover rounded-full border border-muted flex-shrink-0"
               />
               <div className="flex-1">
                 <h3 className="font-semibold text-lg text-primary mb-2">{person.name}</h3>
                 <p className="text-sm text-accent font-medium mb-1">{person.role}</p>
                 <p className="text-sm text-muted-foreground mb-2">{person.affiliation}</p>
-                <p className="text-sm text-foreground">{person.collaboration}</p>
+                <p className="text-sm text-foreground">{person.focus}</p>
               </div>
             </div>
           ))}

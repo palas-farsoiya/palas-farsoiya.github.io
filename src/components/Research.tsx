@@ -8,7 +8,7 @@ const Research = () => {
         "We study how droplets, bubbles, and free surfaces exchange mass, momentum, and energy. A recurring theme in the lab is how transport across deformable interfaces controls the large-scale behavior of multiphase systems.",
         "Our work spans quiescent and turbulent environments, with special attention to dissolution, wave-mediated coupling, and the role of surfactants in modifying interfacial mobility."
       ],
-      image: "/welcome.jpg"
+      image: "/iitr-banner.webp"
     },
     {
       title: "Surfactant-laden interfaces and Marangoni flows",
@@ -16,7 +16,7 @@ const Research = () => {
         "The lab develops numerical frameworks for interfacial flows with soluble and insoluble surfactants. These systems exhibit rich coupling between bulk transport, interfacial chemistry, and hydrodynamics.",
         "By resolving adsorption-desorption kinetics and Marangoni stresses in moving-interface problems, we aim to understand and predict mobility reduction, path instability, and topology-sensitive transport."
       ],
-      image: "/contact.jpg"
+      image: "/contact.webp"
     },
     {
       title: "Fluid-structure interaction and emergent wave-particle dynamics",
@@ -24,7 +24,7 @@ const Research = () => {
         "We are interested in strongly coupled systems where waves, interfaces, and compliant boundaries generate collective behavior that is larger than the sum of its parts.",
         "This includes pilot-wave analogues, nonlinear wave fields, and bio-inspired flow control problems where a mechanistic understanding of the hydrodynamics can guide new physical models and reduced-order descriptions."
       ],
-      image: "/coders.jpg"
+      image: "/coders.webp"
     }
   ];
 
@@ -39,9 +39,9 @@ const Research = () => {
           {/* Main Content */}
           <div className="md:col-span-3">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              <h1 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
                 Research
-              </h2>
+              </h1>
               <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                 Physico-chemical phenomena at fluid interfaces explored with modern numerical tools.
               </p>
@@ -68,8 +68,8 @@ const Research = () => {
 
             {/* Research Projects */}
             <div className="space-y-16">
-              {researchProjects.map((project, index) => (
-                <div key={index} className="bg-card rounded-lg border border-border p-8 lg:p-12">
+              {researchProjects.map((project) => (
+                <div key={project.title} className="bg-card rounded-lg border border-border p-8 lg:p-12">
                   <div className="lg:grid lg:grid-cols-12 lg:gap-12 items-start">
                     {/* Figure - Now on the left */}
                     <div className="lg:col-span-4 mb-8 lg:mb-0">
@@ -77,6 +77,7 @@ const Research = () => {
                         <img
                           src={project.image}
                           alt={project.title}
+                          loading="lazy"
                           className="w-full h-full object-cover"
                           onError={(e) => {
                             e.currentTarget.style.display = 'none';

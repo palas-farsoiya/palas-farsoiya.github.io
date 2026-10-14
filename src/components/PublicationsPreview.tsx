@@ -1,48 +1,7 @@
 import { ArrowRight, ExternalLink, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { featuredPublications } from '@/data/publications';
 
-const featuredPublications = [
-  //   {
-  //   year: "2026",
-  //   title: "A hybrid Volume of Fluid Phase-Field method for Direct Numerical Simulations of soluble surfactant-laden interfacial flows",
-  //   highlight: "How surfactants adsorb, desorb, and diffuse at interfaces",
-  //   link: "https://hal.science/hal-05602246v1/file/haouche%20et%20al.pdf",
-  //   image: "/publications/soluble-surfactant.png",
-    
-  // },
-  {
-    title: "A hybrid Volume of Fluid Phase-Field method for Direct Numerical Simulations of soluble surfactant-laden interfacial flows",
-    journal: "Preprint",
-    year: "2026",
-    highlight: "How surfactants adsorb, desorb, and diffuse at interfaces",
-    image: "/publications/soluble-surfactant.png",
-    link: "https://hal.science/hal-05602246v1/file/haouche%20et%20al.pdf"
-  },
-  {
-    title: "Surfactant effects on gravity-capillary waves",
-    journal: "Journal of Fluid Mechanics",
-    year: "2026",
-    highlight: "How surfactants reshape and damp small waves",
-    image: "/publications/surfactant-gravity-capillary-waves.png",
-    link: "https://doi.org/10.1017/jfm.2026.11260"
-  },
-  {
-    title: "Direct numerical simulation of bubble rising in turbulence",
-    journal: "Journal of Fluid Mechanics",
-    year: "2024",
-    highlight: "Why turbulence slows rising bubbles",
-    image: "/publications/bubble-rising-turbulence.png",
-    link: "https://doi.org/10.1017/jfm.2024.763"
-  },
-  {
-    title: "Direct numerical simulations of bubble-mediated gas transfer and dissolution in quiescent and turbulent flows",
-    journal: "Journal of Fluid Mechanics",
-    year: "2023",
-    highlight: "How bubbles dissolve and exchange gas",
-    image: "/publications/bubble-dissolution-quiescent-turbulent.png",
-    link: "https://doi.org/10.1017/jfm.2022.994"
-  }
-];
 
 const PublicationsPreview = () => {
   return (
@@ -51,7 +10,7 @@ const PublicationsPreview = () => {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-4">
             <FileText className="h-6 w-6 text-primary" />
-            <h2 className="text-3xl font-bold text-primary">Research</h2>
+            <h2 className="text-3xl font-bold text-primary">Selected Publications</h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Selected publications with graphical abstracts
@@ -59,14 +18,15 @@ const PublicationsPreview = () => {
         </div>
 
         <div className="space-y-6 mb-10">
-          {featuredPublications.map((pub, index) => (
-            <div key={index} className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow">
+          {featuredPublications.map((pub) => (
+            <div key={pub.doi} className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div className="lg:grid lg:grid-cols-12 lg:gap-6 items-start">
                 <div className="lg:col-span-3 mb-4 lg:mb-0">
                   <div className="rounded-lg border border-muted bg-background p-2">
                     <img
                       src={pub.image}
                       alt={pub.title}
+                      loading="lazy"
                       className="w-full h-auto object-contain rounded-md"
                     />
                   </div>
@@ -106,7 +66,7 @@ const PublicationsPreview = () => {
             to="/publications"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
           >
-            View All Research
+            View All Publications
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

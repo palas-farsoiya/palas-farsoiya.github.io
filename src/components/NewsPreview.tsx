@@ -1,46 +1,10 @@
-import { ArrowRight, Calendar, Megaphone } from 'lucide-react';
+import { ArrowRight, Calendar, Megaphone, Plane } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { news } from '@/data/news';
+
+const latestNews = news.slice(0, 6);
 
 const NewsPreview = () => {
-  const latestNews = [
-    {
-      date: "2026-06",
-      title: "Palas visits Luc Deike at Princeton University, NJ.",
-      type: "Travel",
-      image: "/placeholder.svg"
-    },
-    {
-      date: "2026-06",
-      title: "Palas visits John Bush at MIT, Cambridge, MA.",
-      type: "Travel",
-      image: "/placeholder.svg"
-    },
-    {
-      date: "2026-06",
-      title: "Palas visits Aditya Lele at Rowan University, NJ.",
-      type: "Travel",
-      image: "/placeholder.svg"
-    },
-    {
-      date: "2026-06",
-      title: "Palas visits Ricardo Amores at UIUC, IL.",
-      type: "Travel",
-      image: "/placeholder.svg"
-    },
-    {
-      date: "2026-06",
-      title: "Palas visits Suhas Jain at Georgia Tech, Atlanta, GA.",
-      type: "Travel",
-      image: "/placeholder.svg"
-    },
-    {
-      date: "2026-05-04",
-      title: "Minakshi Uniyal joins the Farsoiya Research Group as a PhD candidate.",
-      type: "Group",
-      image: "/people/minakshi.jpeg"
-    },
-  ];
-
   return (
     <section className="py-16 bg-muted/30">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -55,14 +19,21 @@ const NewsPreview = () => {
         </div>
 
         <div className="max-w-6xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {latestNews.map((item, index) => (
-            <div key={index} className="bg-card border border-border rounded-xl p-4 hover:shadow-lg transition-shadow">
+          {latestNews.map((item) => (
+            <div key={item.title} className="bg-card border border-border rounded-xl p-4 hover:shadow-lg transition-shadow">
               <div className="rounded-lg border border-muted bg-background p-2 mb-3">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-32 object-contain rounded-md"
-                />
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                    className="w-full h-32 object-contain rounded-md"
+                  />
+                ) : (
+                  <div className="h-32 rounded-md bg-muted/40 flex items-center justify-center">
+                    <Plane className="h-8 w-8 text-muted-foreground" aria-hidden="true" />
+                  </div>
+                )}
               </div>
               <div className="flex items-start gap-3">
                 <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">

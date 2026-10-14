@@ -1,8 +1,7 @@
 import ProfileSidebar from './ProfileSidebar';
+import { links } from '@/data/site';
 
 const JoinUs = () => {
-  const phdAdmissionsUrl = "https://iitr.ac.in/Academics/Admission%20To%20Doctoral%20Programmes.html";
-
   return (
     <section id="join-us" className="py-16 sm:py-24 bg-muted/30">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -15,9 +14,9 @@ const JoinUs = () => {
           {/* Main Content */}
           <div className="md:col-span-3">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              <h1 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
                 Join Us
-              </h2>
+              </h1>
               <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                 We welcome motivated students and visitors interested in computational fluid mechanics, interfacial flows, multiphase transport, and fluid-structure interaction. Please schedule an appointment to discuss research opportunities and research group fit.
               </p>
@@ -32,7 +31,7 @@ const JoinUs = () => {
                 The group is growing and prospective PhD students, MTech students, postdoctoral researchers, and visitors are encouraged to get in touch. If there is a formal opening, it will be listed here and circulated through the usual IIT Roorkee channels.
               </p>
               <a
-                href={phdAdmissionsUrl}
+                href={links.phdAdmissions}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex mt-6 items-center px-5 py-3 text-sm font-semibold text-white bg-primary rounded-md hover:bg-primary/90 transition-colors"
@@ -65,7 +64,7 @@ const JoinUs = () => {
               </h3>
               <div className="grid gap-4 md:grid-cols-2">
                 <a
-                  href={phdAdmissionsUrl}
+                  href={links.phdAdmissions}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-card border border-border rounded-lg p-6 hover:border-accent transition-colors"
@@ -79,7 +78,7 @@ const JoinUs = () => {
                 </a>
 
                 <a
-                  href="https://iitr.ac.in/admissions/pages/Masters_Programs.html"
+                  href={links.mtechAdmissions}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-card border border-border rounded-lg p-6 hover:border-accent transition-colors"
@@ -138,12 +137,9 @@ const JoinUs = () => {
                     ANRF-NPDF
                   </h4>
                   <p className="text-sm text-muted-foreground">
-                    ANRF sponsorded postdoctoral fellowship information for eligible applicants.
+                    ANRF sponsored postdoctoral fellowship information for eligible applicants.
                   </p>
                 </a>
-
-             
-               
               </div>
             </div>
 

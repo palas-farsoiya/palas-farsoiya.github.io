@@ -6,7 +6,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Research', href: '/publications' },
+    { name: 'Research', href: '/research' },
+    { name: 'Publications', href: '/publications' },
     {
       name: 'Courses',
       href: '/courses/computer-programming-and-numerical-analysis',
@@ -21,12 +22,6 @@ const Header = () => {
     { name: 'Join Us', href: '/join-us' },
     { name: 'News', href: '/news' },
     { name: 'Contact', href: '/contact' },
-    /*{ name: 'Talks', href: '/talks' },*/
-    /*{ name: 'Awards', href: '/awards' },*/
-    /*{ name: 'Codes/Blogs', href: '/codes-blogs' },*/
-    /*{ name: 'News', href: '/news' },*/
-    /*{ name: 'Outreach', href: '/outreach' },*/
-    /*{ name: 'Contact', href: '/contact' },*/
   ];
 
   return (
@@ -44,7 +39,7 @@ const Header = () => {
 
           {/* Desktop navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-baseline space-x-6 lg:space-x-8">
               {navigation.map((item) => (
                 <div key={item.name} className="group relative">
                   <Link
@@ -77,10 +72,10 @@ const Header = () => {
               type="button"
               className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-accent hover:bg-muted focus:outline-none focus:ring-2 focus:ring-accent"
               aria-controls="mobile-menu"
-              aria-expanded="false"
+              aria-expanded={isMenuOpen}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{isMenuOpen ? 'Close main menu' : 'Open main menu'}</span>
               {isMenuOpen ? (
                 <X className="block h-6 w-6" aria-hidden="true" />
               ) : (

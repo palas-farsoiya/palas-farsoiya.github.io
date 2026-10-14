@@ -1,55 +1,33 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import ResearchPage from "./pages/ResearchPage";
-import PublicationsPage from "./pages/PublicationsPage";
-import PeoplePage from "./pages/PeoplePage";
-import TalksPage from "./pages/TalksPage";
-import AwardsPage from "./pages/AwardsPage";
-import CodesBlogsPage from "./pages/CodesBlogsPage";
-import NewsPage from "./pages/NewsPage";
-import OutreachPage from "./pages/OutreachPage";
-import ContactPage from "./pages/ContactPage";
-import JoinUsPage from "./pages/JoinUsPage";
-import CoursePage from "./pages/CoursePage";
-
-const queryClient = new QueryClient();
+import Research from "./components/Research";
+import Publications from "./components/Publications";
+import People from "./components/People";
+import News from "./components/News";
+import Contact from "./components/Contact";
+import JoinUs from "./components/JoinUs";
+import CourseReader from "./Courses/ComputerProgrammingNumericalAnalysis/CourseReader";
+import { courseBasePath } from "./Courses/ComputerProgrammingNumericalAnalysis/courseData";
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/research" element={<ResearchPage />} />
-          <Route path="/publications" element={<PublicationsPage />} />
-          <Route
-            path="/courses/computer-programming-and-numerical-analysis"
-            element={<CoursePage />}
-          />
-          <Route
-            path="/courses/computer-programming-and-numerical-analysis/:chapterSlug"
-            element={<CoursePage />}
-          />
-          <Route path="/people" element={<PeoplePage />} />
-          <Route path="/talks" element={<TalksPage />} />
-          <Route path="/awards" element={<AwardsPage />} />
-          <Route path="/codes-blogs" element={<CodesBlogsPage />} />
-          <Route path="/news" element={<NewsPage />} />
-          <Route path="/outreach" element={<OutreachPage />} />
-          <Route path="/join-us" element={<JoinUsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </HashRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <BrowserRouter>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Index />} />
+        <Route path="/research" element={<Research />} />
+        <Route path="/publications" element={<Publications />} />
+        <Route path={courseBasePath} element={<CourseReader />} />
+        <Route path={`${courseBasePath}/:chapterSlug`} element={<CourseReader />} />
+        <Route path="/people" element={<People />} />
+        <Route path="/join-us" element={<JoinUs />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
 
 export default App;
