@@ -25,8 +25,8 @@ const Publications = () => {
               {publications.map((pub) => (
                 <article key={pub.doi} className="bg-card border border-border rounded-2xl p-6 lg:p-8">
                   <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-start">
-                    <div className="lg:col-span-4 mb-6 lg:mb-0">
-                      {pub.image ? (
+                    {pub.image && (
+                      <div className="lg:col-span-4 mb-6 lg:mb-0">
                         <div className="rounded-xl border border-muted bg-background p-3">
                           <img
                             src={pub.image}
@@ -35,14 +35,10 @@ const Publications = () => {
                             className="w-full h-auto object-contain rounded-lg"
                           />
                         </div>
-                      ) : (
-                        <div className="rounded-xl border border-dashed border-muted p-6 text-center text-sm text-muted-foreground">
-                          No graphical abstract is available for this article.
-                        </div>
-                      )}
-                    </div>
+                      </div>
+                    )}
 
-                    <div className="lg:col-span-8">
+                    <div className={pub.image ? "lg:col-span-8" : "lg:col-span-12"}>
                       <div className="mb-4 flex flex-wrap items-center gap-3">
                         <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent/10 text-accent">
                           {pub.year}
@@ -59,12 +55,14 @@ const Publications = () => {
                       </p>
 
                       <p className="mt-3 text-foreground">
-                        {pub.journal}, {pub.volume}
+                        {pub.volume ? `${pub.journal}, ${pub.volume}` : pub.journal}
                       </p>
 
-                      <p className="mt-2 text-sm text-muted-foreground">
-                        DOI: {pub.doi}
-                      </p>
+                      {pub.doi.startsWith("10.") && (
+                        <p className="mt-2 text-sm text-muted-foreground">
+                          DOI: {pub.doi}
+                        </p>
+                      )}
 
                       <div className="mt-5 rounded-xl bg-muted/40 p-4">
                         <p className="text-foreground leading-relaxed">{pub.summary}</p>

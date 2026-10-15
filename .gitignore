@@ -28,3 +28,6 @@ dist-ssr
 output/
 outputs/
 tmp/
+
+# CV sources and PDFs (contain referee contact details; not part of the site)
+CV/

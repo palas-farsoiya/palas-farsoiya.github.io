@@ -77,13 +77,6 @@ const newsItems: NewsItem[] = [
     },
   },
   {
-    date: "2026-05-04",
-    title: "Minakshi Uniyal joins the Farsoiya Research Group as a PhD candidate.",
-    type: "Group",
-    description: "Minakshi Uniyal joins Farsoiya Research Group as a PhD candidate. Welcome Minakshi.",
-    image: "/people/minakshi.webp",
-  },
-  {
     date: "2026-01-15",
     title: "Abhinandan Mohanty joins the Farsoiya Research Group as a PhD candidate.",
     type: "Group",

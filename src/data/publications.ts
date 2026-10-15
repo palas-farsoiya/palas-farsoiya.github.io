@@ -30,8 +30,8 @@ export const publications: Publication[] = [
     year: "2026",
     title: "A hybrid Volume of Fluid Phase-Field method for Direct Numerical Simulations of soluble surfactant-laden interfacial flows",
     highlight: "How surfactants adsorb, desorb, and diffuse at interfaces",
-    authors: "Haouche, Ilies and Reichert, Benjamin and Baudoin, Michaël and Kumar Farsoiya, Palas",
-    journal: "Preprint",
+    authors: "Haouche, I., Reichert, B., Baudoin, M., & Farsoiya, P. K.",
+    journal: "Preprint, under review in Journal of Computational Physics",
     volume: "",
     doi: "https://hal.science/hal-05602246",
     link: "https://hal.science/hal-05602246v1/file/haouche%20et%20al.pdf",
@@ -53,6 +53,29 @@ export const publications: Publication[] = [
       "This paper studies how surfactants, the same kind of molecules found in soaps and natural ocean surface films, change the way small surface waves move and break. In simple terms, it shows that even a thin surface coating can reshape waves, change how rough the surface looks, and alter how energy is lost from the flow."
   },
   {
+    year: "2026",
+    title: "Coalescence of viscoelastic sessile drops: the small and large contact angle limits",
+    authors: "Kaneelil, P. R., Tojo, K., Farsoiya, P. K., Deike, L., & Stone, H. A.",
+    journal: "Journal of Fluid Mechanics",
+    volume: "1026, A12",
+    doi: "10.1017/jfm.2025.10878",
+    link: "https://doi.org/10.1017/jfm.2025.10878",
+    image: "/publications/viscoelastic-drop-coalescence.webp",
+    summary:
+      "When two drops of a polymer-laden (viscoelastic) liquid sitting on a surface merge, the bridge between them can form a surprisingly sharp, distorted shape. This paper shows that the angle at which the drops meet the surface decides whether the polymers matter: at small contact angles the merging looks just like ordinary liquids, while at large angles elasticity changes the dynamics."
+  },
+  {
+    year: "2025",
+    title: "Size amplification of jet drops due to insoluble surfactants",
+    authors: "Eshima, J., Aurégan, T., Farsoiya, P. K., Popinet, S., Stone, H. A., & Deike, L.",
+    journal: "Physical Review Fluids",
+    volume: "10, 123604",
+    doi: "10.1103/t9k3-dqyc",
+    link: "https://doi.org/10.1103/t9k3-dqyc",
+    summary:
+      "When a small bubble bursts at a liquid surface it shoots up a thin jet that breaks into droplets, a key source of sea spray and aerosols. Combining experiments and simulations, this paper finds that surface contaminants (surfactants) make the ejected droplets larger for small bubbles, the opposite of the trend seen for bigger bubbles, with implications for aerosol production over a contaminated ocean."
+  },
+  {
     year: "2024",
     title: "Direct numerical simulation of bubble rising in turbulence",
     highlight: "Why turbulence slows rising bubbles",
@@ -66,11 +89,22 @@ export const publications: Publication[] = [
       "This work explains why bubbles rise more slowly in turbulent liquids than they do in still water. The key public-facing takeaway is that turbulence does not just shake bubbles around, it changes the drag they feel and therefore changes how quickly gases, momentum, and energy move through bubbly flows."
   },
   {
+    year: "2024",
+    title: "Coupled volume of fluid and phase field method for direct numerical simulation of insoluble surfactant-laden interfacial flows and application to rising bubbles",
+    authors: "Farsoiya, P. K., Popinet, S., Stone, H. A., & Deike, L.",
+    journal: "Physical Review Fluids",
+    volume: "9, 094004",
+    doi: "10.1103/PhysRevFluids.9.094004",
+    link: "https://doi.org/10.1103/PhysRevFluids.9.094004",
+    summary:
+      "This paper introduces an open-source simulation tool for flows where surfactants coat a fluid interface. Applied to rising bubbles, it shows how surfactants slow bubbles down and change their paths, effects that matter for predicting bubbly flows in nature and industry."
+  },
+  {
     year: "2023",
     title: "Role of viscosity in turbulent drop break-up",
     authors: "Farsoiya, P. K., Liu, Z., Daiss, A., Fox, R. O., & Deike, L.",
     journal: "Journal of Fluid Mechanics",
-    volume: "972, A21",
+    volume: "972, A11",
     doi: "10.1017/jfm.2023.684",
     link: "https://doi.org/10.1017/jfm.2023.684",
     image: "/publications/role-of-viscosity-drop-breakup.webp",
@@ -89,6 +123,18 @@ export const publications: Publication[] = [
     image: "/publications/bubble-dissolution-quiescent-turbulent.webp",
     summary:
       "This article studies how bubbles dissolve and exchange gas with the surrounding liquid, both in calm conditions and in turbulence. In everyday terms, it helps explain how quickly a bubble can deliver gas into a liquid, which matters in applications from chemical reactors to natural air–water exchange."
+  },
+  {
+    year: "2022",
+    title: "Direct numerical simulations of dilute gas transfer by breaking waves",
+    authors: "Farsoiya, P. K., Popinet, S., & Deike, L.",
+    journal: "Physical Review Fluids",
+    volume: "7, 110506",
+    doi: "10.1103/PhysRevFluids.7.110506",
+    link: "https://doi.org/10.1103/PhysRevFluids.7.110506",
+    image: "/publications/breaking-waves-gas-transfer.webp",
+    summary:
+      "Breaking ocean waves trap air bubbles that carry gases such as carbon dioxide into the water. This paper accompanies the simulation work that won the 2021 APS Division of Fluid Dynamics Milton Van Dyke Award, visualising how gas moves from bubbles into the sea beneath a breaking wave."
   },
   {
     year: "2021",
@@ -127,11 +173,22 @@ export const publications: Publication[] = [
       "This article studies tiny ripples that travel around a hollow fluid filament. In simple language, it shows that the motion is richer than a single clean vibration: the interface can respond through both distinct wave modes and a continuous range of motions, which helps explain complex oscillations in thin fluid structures."
   },
   {
+    year: "2019",
+    title: "Test cases for comparison of two interfacial solvers",
+    authors: "Singh, M., Farsoiya, P. K., & Dasgupta, R.",
+    journal: "International Journal of Multiphase Flow",
+    volume: "115, 75–92",
+    doi: "10.1016/j.ijmultiphaseflow.2019.02.004",
+    link: "https://doi.org/10.1016/j.ijmultiphaseflow.2019.02.004",
+    summary:
+      "Simulation codes for flows with moving interfaces need trustworthy benchmarks. This paper sets out test problems with known solutions and uses them to compare two interfacial flow solvers, giving other researchers a way to check the accuracy of their own codes."
+  },
+  {
     year: "2018",
     title: "Faraday waves on a cylindrical fluid filament – generalised equation and simulations",
     authors: "Patankar, S., Farsoiya, P. K., & Dasgupta, R.",
     journal: "Journal of Fluid Mechanics",
-    volume: "857, 80-118",
+    volume: "857, 80–110",
     doi: "10.1017/jfm.2018.657",
     link: "https://doi.org/10.1017/jfm.2018.657",
     image: "/publications/patankar-faraday.webp",
@@ -143,7 +200,7 @@ export const publications: Publication[] = [
     title: "Axisymmetric viscous interfacial oscillations – theory and simulations",
     authors: "Farsoiya, P. K., Mayya, Y. S., & Dasgupta, R.",
     journal: "Journal of Fluid Mechanics",
-    volume: "826, 797-818",
+    volume: "826, 797–818",
     doi: "10.1017/jfm.2017.443",
     link: "https://doi.org/10.1017/jfm.2017.443",
     image: "/publications/axisymmetric.webp",

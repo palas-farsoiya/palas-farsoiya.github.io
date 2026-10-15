@@ -30,13 +30,6 @@ export const labMembers: Person[] = [
     image: "/people/deependra.webp",
   },
   {
-    name: "Minakshi Uniyal",
-    role: "PhD Student",
-    affiliation: "IIT Roorkee",
-    focus: "Faraday waves and emergent hydrodynamics.",
-    image: "/people/minakshi.webp",
-  },
-  {
     name: "Abhay Purushottam Khandale",
     role: "MTech Student",
     affiliation: "IIT Roorkee",
@@ -47,7 +40,19 @@ export const labMembers: Person[] = [
     name: "Loveraj Singh",
     role: "MTech Student",
     affiliation: "IIT Roorkee",
-    focus: "Numerical modeling of methane pyrolysis.",
+    focus: "Modeling of methane bubble pyrolysis.",
+  },
+  {
+    name: "Deepak Chauhan",
+    role: "MTech Student",
+    affiliation: "IIT Roorkee",
+    focus: "Enhanced mixing using Faraday waves.",
+  },
+  {
+    name: "Prashanta Kumar Roy",
+    role: "MTech Student",
+    affiliation: "IIT Roorkee",
+    focus: "Modeling reaction kinetics of methane pyrolysis.",
   },
 ];
 
