@@ -15,6 +15,19 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     year: "2026",
+    title: "Investigation of effect on boundary layer due to insoluble surfactants on rising bubbles",
+    authors: "Chauhan, D. S., & Farsoiya, P. K.",
+    journal: "Physics of Fluids",
+    volume: "38, 102108",
+    doi: "10.1063/5.0349830",
+    link: "https://doi.org/10.1063/5.0349830",
+    image: "/publications/surfactant-boundary-layer-rising-bubbles.webp",
+    highlight: "How surfactants stiffen a rising bubble's surface and slow it down",
+    summary:
+      "This paper uses detailed simulations to show how surfactants, soap-like molecules found in almost all real liquids, collect at the back of a rising bubble, stiffen part of its surface, and slow it down. It gives a simple formula for the thickness of the thin layer where this happens, helping predict how contaminated bubbles behave in chemical reactors, the ocean, and industrial flows."
+  },
+  {
+    year: "2026",
     title: "A hybrid Volume of Fluid Phase-Field method for Direct Numerical Simulations of soluble surfactant-laden interfacial flows",
     highlight: "How surfactants adsorb, desorb, and diffuse at interfaces",
     authors: "Haouche, Ilies and Reichert, Benjamin and Baudoin, Michaël and Kumar Farsoiya, Palas",

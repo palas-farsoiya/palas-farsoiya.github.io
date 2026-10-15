@@ -5,38 +5,76 @@ export type NewsItem = {
   type: string;
   description: string;
   image?: string;
+  /** Attribution for images that are not our own (e.g. Wikimedia Commons). */
+  imageCredit?: { text: string; url: string };
+  /** Optional link shown as "Read more" (e.g. a paper DOI). */
+  link?: string;
 };
 
 const newsItems: NewsItem[] = [
+  {
+    date: "2026-10",
+    title: "Congratulations to Deependra Singh Chauhan on a new paper in Physics of Fluids!",
+    type: "Publication",
+    description:
+      "Deependra's work on how insoluble surfactants shape the boundary layer around rising bubbles is now published in Physics of Fluids. Congratulations, Deependra!",
+    image: "/people/deependra.webp",
+    link: "https://doi.org/10.1063/5.0349830",
+  },
   {
     date: "2026-06",
     title: "Palas visits Luc Deike at Princeton University, NJ.",
     type: "Travel",
     description: "Palas visits Luc Deike at Princeton University in New Jersey for research discussions.",
+    image: "/news/places/princeton.webp",
+    imageCredit: {
+      text: "Nassau Hall, Princeton. Photo: Smallbones, CC0",
+      url: "https://commons.wikimedia.org/wiki/File:Nassau_Hall_Princeton.JPG",
+    },
   },
   {
     date: "2026-06",
     title: "Palas visits John Bush at MIT, Cambridge, MA.",
     type: "Travel",
     description: "Palas visits John Bush at MIT in Cambridge, Massachusetts for research discussions.",
+    image: "/news/places/mit.webp",
+    imageCredit: {
+      text: "Great Dome, MIT. Photo: Peacearth, CC BY-SA 4.0",
+      url: "https://commons.wikimedia.org/wiki/File:Great_dome_of_MIT,_Feb_2021_(2)_(cropped).jpg",
+    },
   },
   {
     date: "2026-06",
     title: "Palas visits Aditya Lele at Rowan University, NJ.",
     type: "Travel",
     description: "Palas visits Aditya Lele at Rowan University in New Jersey for research discussions.",
+    image: "/news/places/rowan.webp",
+    imageCredit: {
+      text: "Bunce Hall, Rowan University. Photo: Purplybunny, CC BY-SA 4.0",
+      url: "https://commons.wikimedia.org/wiki/File:Bunce_Hall_Rowan_University_sky.jpg",
+    },
   },
   {
     date: "2026-06",
     title: "Palas visits Ricardo Amores at UIUC, IL.",
     type: "Travel",
     description: "Palas visits Ricardo Amores at the University of Illinois Urbana-Champaign in Illinois for research discussions.",
+    image: "/news/places/uiuc.webp",
+    imageCredit: {
+      text: "Altgeld Hall, UIUC. Photo: Killivalavan Solai, CC BY-SA 4.0",
+      url: "https://commons.wikimedia.org/wiki/File:Altgeld_Hall,_University_of_Illinois_-_Winter.jpg",
+    },
   },
   {
     date: "2026-06",
     title: "Palas visits Suhas Jain at Georgia Tech, Atlanta, GA.",
     type: "Travel",
     description: "Palas visits Suhas Jain at Georgia Tech in Atlanta, Georgia for research discussions.",
+    image: "/news/places/georgia-tech.webp",
+    imageCredit: {
+      text: "Tech Tower, Georgia Tech. Photo: James Emery, CC BY 2.0",
+      url: "https://commons.wikimedia.org/wiki/File:Lettie_Pate_Whitehead_Evans_Administration_Building_6284.jpg",
+    },
   },
   {
     date: "2026-05-04",

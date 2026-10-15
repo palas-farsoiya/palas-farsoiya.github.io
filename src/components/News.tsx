@@ -1,4 +1,4 @@
-import { Plane } from 'lucide-react';
+import { ExternalLink, Plane } from 'lucide-react';
 import ProfileSidebar from './ProfileSidebar';
 import { news } from '@/data/news';
 
@@ -42,6 +42,16 @@ const News = () => {
                             <Plane className="h-8 w-8 text-muted-foreground" aria-hidden="true" />
                           </div>
                         )}
+                        {item.imageCredit && (
+                          <a
+                            href={item.imageCredit.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-1 block text-[11px] leading-snug text-muted-foreground hover:text-accent"
+                          >
+                            {item.imageCredit.text}
+                          </a>
+                        )}
                       </div>
                       <div className="lg:col-span-8">
                         <div className="flex items-center gap-3 mb-3">
@@ -56,6 +66,16 @@ const News = () => {
                         <p className="mt-4 text-foreground leading-relaxed">
                           {item.description}
                         </p>
+                        {item.link && (
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 mt-4 text-sm font-medium text-accent hover:underline"
+                          >
+                            Read the paper <ExternalLink className="h-3.5 w-3.5" />
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>

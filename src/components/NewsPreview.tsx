@@ -34,6 +34,16 @@ const NewsPreview = () => {
                     <Plane className="h-8 w-8 text-muted-foreground" aria-hidden="true" />
                   </div>
                 )}
+                {item.imageCredit && (
+                  <a
+                    href={item.imageCredit.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block text-[11px] leading-snug text-muted-foreground hover:text-accent"
+                  >
+                    {item.imageCredit.text}
+                  </a>
+                )}
               </div>
               <div className="flex items-start gap-3">
                 <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
