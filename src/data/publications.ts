@@ -20,8 +20,8 @@ export const publications: Publication[] = [
     authors: "Mohanty, A., & Farsoiya, P. K.",
     journal: "Preprint, arXiv:2611.28784",
     volume: "",
-    doi: "https://arxiv.org/abs/2611.28784",
-    link: "https://arxiv.org/abs/2611.28784",
+    doi: "10.48550/arXiv.2611.28784",
+    link: "https://doi.org/10.48550/arXiv.2611.28784",
     image: "/publications/marangoni-spreading-interfacial-waves.webp",
     summary:
       "When surfactant is spread unevenly over a liquid interface, the surface-tension imbalance drives a Marangoni flow that evens it out. This paper shows that, without inertia, the surfactant simply relaxes and the interface stays flat; with inertia, the same flow launches capillary-gravity waves that then carry the surfactant back and forth, producing slowly decaying oscillations. Theory and simulations together explain when and how strongly surfactant spreading and surface waves feed into each other."
