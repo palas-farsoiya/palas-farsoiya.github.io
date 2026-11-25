@@ -15,6 +15,19 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     year: "2026",
+    title: "Transient coupling of Marangoni spreading and interfacial waves",
+    highlight: "How Marangoni flow launches waves on a surfactant-laden interface",
+    authors: "Mohanty, A., & Farsoiya, P. K.",
+    journal: "Preprint, arXiv:2611.28784",
+    volume: "",
+    doi: "https://arxiv.org/abs/2611.28784",
+    link: "https://arxiv.org/abs/2611.28784",
+    image: "/publications/marangoni-spreading-interfacial-waves.webp",
+    summary:
+      "When surfactant is spread unevenly over a liquid interface, the surface-tension imbalance drives a Marangoni flow that evens it out. This paper shows that, without inertia, the surfactant simply relaxes and the interface stays flat; with inertia, the same flow launches capillary-gravity waves that then carry the surfactant back and forth, producing slowly decaying oscillations. Theory and simulations together explain when and how strongly surfactant spreading and surface waves feed into each other."
+  },
+  {
+    year: "2026",
     title: "Investigation of effect on boundary layer due to insoluble surfactants on rising bubbles",
     authors: "Chauhan, D. S., & Farsoiya, P. K.",
     journal: "Physics of Fluids",
